@@ -451,12 +451,8 @@
                         <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted bg-white border-top">Lumpia Kaya Rasa menyediakan dua pilihan produk, yaitu <strong>Lumpia Frozen</strong> dan <strong>Lumpia Goreng Siap Santap</strong>.</div></div>
                     </div>
                     <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm overflow-hidden">
-                        <h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Berapa Harga Lumpia Kaya Rasa?</button></h2>
-                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted bg-white border-top">• Lumpia Frozen isi 10 pcs : <strong>Rp35.000</strong><br>• Lumpia Goreng isi 10 pcs : <strong>Rp40.000</strong></div></div>
-                    </div>
-                    <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm overflow-hidden">
                         <h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Berapa Isi Dalam Satu Pack?</button></h2>
-                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted bg-white border-top">Setiap 1 pack Lumpia Kaya Rasa berisi <strong>10 biji lumpia</strong>.</div></div>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted bg-white border-top">Setiap 1 pack Lumpia Kaya Rasa berisi <strong>5 dan 10 biji lumpia</strong>.</div></div>
                     </div>
                     <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm overflow-hidden">
                         <h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Apakah Tersedia Gratis Ongkir?</button></h2>

@@ -10,10 +10,6 @@ return new class extends Migration
     {
         Schema::table('kontak', function (Blueprint $table) {
 
-            $table->unsignedBigInteger('id_produk')
-                  ->nullable()
-                  ->after('id_pesanan');
-
             $table->integer('rating')
                   ->nullable()
                   ->after('pesan');
@@ -34,7 +30,6 @@ return new class extends Migration
         Schema::table('kontak', function (Blueprint $table) {
 
             $table->dropColumn([
-                'id_produk',
                 'rating',
                 'foto_produk',
                 'balasan_admin'
