@@ -87,11 +87,26 @@
                             </label>
 
                             <input type="number"
-                                   name="jumlah"
-                                   value="1"
-                                   min="1"
-                                   class="form-control"
-                                   required>
+                                name="jumlah"
+                                value="1"
+                                min="1"
+                                max="{{ $p->stok }}"
+                                class="form-control jumlahProduk"
+                                data-harga="{{ $p->harga }}"
+                                required>
+
+                        </div>
+
+                        <!-- Total Pembayaran -->
+                        <div class="mb-3">
+
+                            <label class="form-label fw-bold">
+                                Total Pembayaran
+                            </label>
+
+                            <div class="form-control bg-light fw-bold text-success totalPembayaran">
+                                Rp {{ number_format($p->harga,0,',','.') }}
+                            </div>
 
                         </div>
 
@@ -271,6 +286,36 @@ document
 
 });
 
+</script>
+
+<script>
+document
+.querySelectorAll('.jumlahProduk')
+.forEach(function(input){
+
+    input.addEventListener('input', function(){
+
+        const harga =
+            parseInt(this.dataset.harga);
+
+        const jumlah =
+            parseInt(this.value) || 1;
+
+        const total =
+            harga * jumlah;
+
+        const card =
+            this.closest('.card-body');
+
+        const totalElement =
+            card.querySelector('.totalPembayaran');
+
+        totalElement.textContent =
+            'Rp ' + total.toLocaleString('id-ID');
+
+    });
+
+});
 </script>
 
 @endpush

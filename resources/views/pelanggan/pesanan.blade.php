@@ -37,7 +37,7 @@
                         <div class="d-flex justify-content-between align-items-center mb-3">
 
                             <h5 class="fw-bold mb-0">
-                                Pesanan #{{ $p->id_pesanan }}
+                                Pesanan {{ $loop->iteration }}
                             </h5>
 
                             @if($p->status_pesanan == 'pending')
