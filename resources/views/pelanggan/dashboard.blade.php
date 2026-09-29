@@ -216,7 +216,7 @@
                 <table class="tabel-keren">
                     <thead>
                         <tr>
-                            <th>Order ID</th>
+                            <th>No pesanan</th>
                             <th>Tanggal Pemesanan</th>
                             <th>Total Tagihan</th>
                             <th>Status</th>
@@ -226,7 +226,7 @@
                         @forelse($riwayatPesanan as $pesanan)
                         <tr>
                             <td>
-                                <strong>#{{ $pesanan->id_pesanan }}</strong>
+                                <strong>{{ $pesanan->id_pesanan }}</strong>
                             </td>
                             <td style="color: var(--warna-teks-pudar);">
                                 {{ \Carbon\Carbon::parse($pesanan->created_at)->format('d M Y, H:i') }}

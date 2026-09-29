@@ -111,7 +111,7 @@
 
 
     <div class="section-title">
-        <div class="section-dot" style="background: #10B981;"></div> Performa Finansial
+        <div class="section-dot" style="background: #10B981;"></div> Pendapatan
     </div>
     <div class="grid-4">
         <div class="pro-card kpi-wrapper">
@@ -197,7 +197,7 @@
 
 
     <div class="section-title">
-        <div class="section-dot" style="background: #F59E0B;"></div> Operasional & Logistik
+        <div class="section-dot" style="background: #F59E0B;"></div> Status Pesanan
     </div>
     
     <div class="grid-3">
@@ -223,7 +223,7 @@
             <table class="pro-table">
                 <thead>
                     <tr>
-                        <th style="padding-left: 32px;">ID Pesanan</th>
+                        <th style="padding-left: 32px;">No Pesanan</th>
                         <th>Waktu Masuk</th>
                         <th>Nilai Transaksi</th>
                         <th style="padding-right: 32px;">Status</th>
@@ -232,7 +232,7 @@
                 <tbody>
                     @forelse($pesananTerbaru as $pesanan)
                     <tr>
-                        <td style="padding-left: 32px; font-weight: 700; color: #0F172A;">#{{ $pesanan->id_pesanan }}</td>
+                        <td style="padding-left: 32px; font-weight: 700; color: #0F172A;">{{ $pesanan->id_pesanan }}</td>
                         <td style="color: #64748B;">{{ \Carbon\Carbon::parse($pesanan->created_at)->translatedFormat('d M Y, H:i') }}</td>
                         <td style="font-weight: 700; color: #0F172A;">Rp {{ number_format($pesanan->total_harga,0,',','.') }}</td>
                         <td style="padding-right: 32px;">

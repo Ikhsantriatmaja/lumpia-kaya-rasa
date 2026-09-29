@@ -303,7 +303,7 @@
 
     <a
         href="{{ url('/admin/produk') }}"
-        class="{{ request()->is('admin/produk*') ? 'active' : '' }}">
+        class="{{ request()->routeIs('produk.index', 'produk.create', 'produk.edit') ? 'active' : '' }}">
 
         🍱 Produk
     </a>
