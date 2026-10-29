@@ -67,7 +67,7 @@ class MetodePembayaranController extends Controller
             ->route('metode-pembayaran.index')
             ->with(
                 'success',
-                'QRIS berhasil ditambahkan.'
+                'Metode Pembayaran berhasil ditambahkan.'
             );
     }
 
@@ -124,7 +124,7 @@ class MetodePembayaranController extends Controller
             ->route('metode-pembayaran.index')
             ->with(
                 'success',
-                'QRIS berhasil diperbarui.'
+                'Metode Pembayaran berhasil diperbarui.'
             );
     }
 

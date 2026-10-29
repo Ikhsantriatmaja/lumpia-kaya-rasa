@@ -127,17 +127,23 @@
                                     -- Pilih Pembayaran --
                                 </option>
 
+
                                 @foreach($metode as $m)
 
-                                    <option
-                                        value="{{ $m->id_metode_pembayaran }}"
-                                        data-qris="{{ $m->qris ? asset('storage/'.$m->qris) : '' }}">
+                                    @if(strtolower(trim($m->nama_metode)) != 'cash')
 
-                                        {{ $m->nama_metode }}
+                                        <option
+                                            value="{{ $m->id_metode_pembayaran }}"
+                                            data-qris="{{ $m->qris ? asset('storage/'.$m->qris) : '' }}">
 
-                                    </option>
+                                            {{ $m->nama_metode }}
+
+                                        </option>
+
+                                    @endif
 
                                 @endforeach
+
 
                             </select>
 
