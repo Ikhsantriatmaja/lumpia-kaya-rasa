@@ -100,7 +100,7 @@
 
     <div class="pro-card" style="background: linear-gradient(105deg, #0F172A 0%, #1E293B 100%); color: #FFFFFF; margin-bottom: 40px; border: none; position: relative; overflow: hidden; padding: 32px;">
         <div style="position: relative; z-index: 2;">
-            <h4 style="font-size: 1.35rem; font-weight: 700; margin: 0 0 10px 0;">Selamat Datang, {{ session('admin_nama') }}! 🚀</h4>
+            <h4 style="font-size: 1.35rem; font-weight: 700; margin: 0 0 10px 0;">Selamat Datang, {{ session('admin_nama') }}!</h4>
             <p style="color: #94A3B8; font-size: 0.9375rem; margin: 0; max-width: 650px; line-height: 1.6; font-weight: 400;">
                 Kelola seluruh siklus pemesanan pelanggan, perbarui inventaris, monitor laporan finansial harian, dan respons umpan balik dari pelanggan langsung melalui panel ini.
             </p>
