@@ -163,9 +163,13 @@ class PelangganAuthController extends Controller
             'id_pelanggan',
             $idPelanggan
         )
-        ->latest('id_pesanan')
+        ->orderBy('id_pesanan', 'desc')
         ->take(5)
-        ->get();
+        ->get()
+        ->sortBy('id_pesanan')
+        ->values();
+
+        $nomorAwal = $totalPesanan - $riwayatPesanan->count() + 1;
 
         return view(
             'pelanggan.dashboard',
@@ -174,7 +178,8 @@ class PelangganAuthController extends Controller
                 'pending',
                 'diproses',
                 'selesai',
-                'riwayatPesanan'
+                'riwayatPesanan',
+                'nomorAwal'
             )
         );
     }

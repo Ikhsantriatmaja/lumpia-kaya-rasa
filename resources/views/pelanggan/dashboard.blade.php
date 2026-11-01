@@ -206,7 +206,7 @@
 
         <div class="kotak-tabel">
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h4 style="font-weight: 800; margin: 0; color: var(--warna-teks-utama);">Riwayat Pesanan</h4>
+                <h4 style="font-weight: 800; margin: 0; color: var(--warna-teks-utama);">Riwayat Pesanan Terakhir</h4>
                 <a href="/pesanan-saya" class="tombol-emas">
                     Lihat Semua <i class="bi bi-arrow-right ms-1"></i>
                 </a>
@@ -223,10 +223,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse($riwayatPesanan as $pesanan)
+                        @forelse($riwayatPesanan as $index => $pesanan)
                         <tr>
                             <td>
-                                <strong>{{ $pesanan->id_pesanan }}</strong>
+                                <strong>{{ $nomorAwal + $index }}</strong>
                             </td>
                             <td style="color: var(--warna-teks-pudar);">
                                 {{ \Carbon\Carbon::parse($pesanan->created_at)->format('d M Y, H:i') }}
